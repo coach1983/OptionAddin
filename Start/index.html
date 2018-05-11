@@ -29,13 +29,48 @@
 <body class="ms-font-m ms-welcome">
     <div id="content-header">
         <div class="padding">
-            <h1>Welcome</h1>
+            <h1>nLIGHT</h1>
         </div>
     </div>
     <div id="content-main">
         <div class="padding">
+            <div class="ms-Dropdown" tabindex="0">
+                <label class="ms-font-m">Option Type</label>
+                <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+                <select class="ms-Dropdown-select" id='flag'>
+                    <option>Choose a option type</option>
+                    <option>p</option>
+                    <option>c</option>
+                </select>
+            </div>
+                <p class="ms-font-m">Stock Price</p>
+                <input class="ms-TextField-field"  id="text1" type="text" style="width:70%" value="" placeholder="">
+                <br/>
+                <p class="ms-font-m">Strike Price</p>
+                <input class="ms-TextField-field" id="text2" type="text" style="width:70%" value="" placeholder="">
 
-            <!-- TODO1: Create a button. -->
+                <br/>
+                <p class="ms-font-m">Years to maturity</p>
+                <input class="ms-TextField-field" id="text3" type="text" style="width:70%" value="" placeholder="">
+
+                <br/>
+                <p class="ms-font-m">Risk free rate</p>
+                <input class="ms-TextField-field" id="text4" type="text" style="width:70%" value="" placeholder="">
+
+                <br/>
+                <p class="ms-font-m">Volatility</p>
+                <input class="ms-TextField-field" id="text5" type="text" style="width:70%" value="" placeholder="">
+
+                <br/><br/>
+                <button id="run" class="ms-Button">
+                    <span class="ms-Button-label">Run code</span>
+                </button>
+                <br/><br/>
+                <button id="createTable" class="ms-Button">
+                    <span class="ms-Button-label">Create Table</span>
+                </button>
+
+
 
         </div>
     </div>
