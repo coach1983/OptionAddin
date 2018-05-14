@@ -32,6 +32,11 @@
         for (var i = 0; i < DropdownHTMLElements.length; ++i) {
             var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
         }
+       
+        var PivotElements = document.querySelectorAll(".ms-Pivot");
+        for (var i = 0; i < PivotElements.length; i++) {
+            new fabric['Pivot'](PivotElements[i]);
+        }
     }
 
     function run() {
