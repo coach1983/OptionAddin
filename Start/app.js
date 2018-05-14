@@ -129,7 +129,7 @@
         d1 = (Math.log(S / X) + (r + v * v / 2.0) * T) / (v * Math.sqrt(T));
         d2 = d1 - v * Math.sqrt(T);
 
-        if (PutCallFlag == "c")
+        if (PutCallFlag == "Call")
             return S * CND(d1) - X * Math.exp(-r * T) * CND(d2);
         else
             return X * Math.exp(-r * T) * CND(-d2) - S * CND(-d1);
